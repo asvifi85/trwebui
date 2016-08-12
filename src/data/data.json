@@ -1,0 +1,44 @@
+[
+    {
+        "id": "22",
+        "type": "dra_ss",
+        "description": null,
+        "createDate": 1470859920372,
+        "modifyDate": 1470859920372,
+        "lastViewed": 1470859920372,
+        "docCount": 0,
+        "attributes": {
+            "description": "Other saved search description",
+            "name": "Adenylate cyclase type AND cancer 3June2016 9:15AM",
+            "term": "Adenylate cyclase type AND cancer"
+        }
+    },
+    {
+        "id": "3",
+        "type": "dra_ss",
+        "description": null,
+        "createDate": 1470859883980,
+        "modifyDate": 1470859883980,
+        "lastViewed": 1470859883980,
+        "docCount": 0,
+        "attributes": {
+            "description": "3th saved search",
+            "name": "Patents 3June2016 9:15AM",
+            "term": "patent1 or patent2"
+        }
+    },
+    {
+        "id": "1",
+        "type": "dra_ss",
+        "description": null,
+        "createDate": 1470859658956,
+        "modifyDate": 1470859658956,
+        "lastViewed": 1470859658956,
+        "docCount": 0,
+        "attributes": {
+            "description": "My first saved search description",
+            "name": "Aurora kinase AND cancer 17June2016 10:30AM",
+            "term": "drug1 OR drug2"
+        }
+    }
+]

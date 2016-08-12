@@ -1,0 +1,25 @@
+{
+  "name": "webui-component-webui-sse",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-ng-html2js": "0.2.2",
+    "gulp-task-listing": "1.0.1",
+    "pipeline-compile-less": "1.0.1",
+    "pipeline-handyman": "1.0.0",
+    "pipeline-validate-css": "1.0.0",
+    "pipeline-validate-js": "1.0.0-rc4",
+    "webui-pipeline-archive-dist": "0.1.0",
+    "webui-pipeline-test-tdd": "0.3.0",
+    "gulp-inject": "3.0.0",
+    "wiredep": "4.0.0",
+    "run-sequence": "1.1.5",
+    "webui-pipeline-serve": "git+ssh://git@github.com:ThomsonReuters-IPS/webui-pipeline-serve#0.1.0"
+  }
+}

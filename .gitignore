@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+node_modules
+bower_components
+dest
+dist
+tmp
+.vagrant
+npm-debug.log
+reports
+coverage

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" prefix="og: http://ogp.me/ns/article#">
+
+  <head>
+
+    <title>DRA Skin</title>
+
+    <meta charset="utf-8">
+
+    <meta name="description" content="Project Neon"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon/favicon.ico" />
+    <!-- Using Source Sans from CDN only because their packaging is nice and easy
+         TODO: pull these fonts locally and deploy along side WebUI and FontAwesome font files -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Source+Serif+Pro:400,600" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../dist/webui-component-webui-sse.min.css"/>
+
+  <!-- bower:css -->
+  <!-- endbower -->
+   </head>
+
+  <body ng-app="webui-sse.sse">
+    <script src='../dist/angular/angular.js'></script>
+    <script src='../dist/angular-bootstrap/ui-bootstrap-tpls.js'></script>
+    <script src='../dist/webui-component-webui-sse.min.js'></script>
+    <!-- bower:js -->
+    <!-- endbower -->
+    <div class="ne">
+      <!--<div data-ne-header></div>-->
+      <!--<div class="main" data-ui-view></div>-->
+      <!-- <div class="content-section" ng-include="'modules/SSE_dra_module/dra.html'"></div> -->
+      <dra-details user-id="123"></dra-details>
+    </div>
+
+
+  </body>
+
+</html>

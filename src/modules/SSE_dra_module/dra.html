@@ -1,0 +1,48 @@
+<div ng-controller="DRASkinController as DSC">
+  <div class="sg sg-section-partial ng-scope">
+  <div class="styleguide-card-example">
+    <div class="wui-card__label-left wui-large-text">Saved Work:XXX</div>
+      <div class="wui-card__header-right">
+        <div class="wui-topic-tag">
+          <span>Sort by: </span>
+            <select ng-model="DSC.sortData">
+              <option value="SavedDate">Date saved</option>
+              <option value="ViewedDate">Date Viewed</option>
+            </select>
+        </div>
+      </div>
+  <div class="draList wui-card" ng-repeat="item in DSC.dataList | orderBy: DSC.sortData">
+    <div class="wui-card__label-header">
+      <div class="wui-card__label">
+
+      </div>
+    </div>
+    <div class="wui-card__content">
+      <div class="wui-card__header">
+        <div class="wui-card__header-left">
+          <span class="wui-descriptor">SAVED DATE {{item.createdate}}</span>
+          <span class="wui-descriptor">VIEWED DATE {{item.lastViewed}}</span>
+        </div>
+        <div class="wui-card__header-right">
+          <button class="wui-mini-btn wui-mini-btn--secondary" ng-click="deleteItem()">Delete</button>
+          <button class="wui-mini-btn wui-mini-btn--secondary" ng-click="editItem()">Edit</button>
+        </div>
+      </div>
+      <div class="wui-card__body">
+        <div class="wui-card__body-content">
+          <h2 class="wui-large-text wui-content-title wui-content-title--small">{{item.name}}</h2>
+           <p class="itemDescription" ng-if="item.description">
+            {{item.description}}
+          </p>
+          <p class="item-name" ng-if="item.attributes.name">
+            {{item.attributes.name}}
+          </p>
+        </div>
+      </div>
+      <div class="wui-card__footer">
+
+      </div>
+    </div>
+  </div>
+
+

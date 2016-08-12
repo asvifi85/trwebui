@@ -1,0 +1,45 @@
+<div class="content-section">
+  <div class="sg sg-section-partial ng-scope">
+  <div class="styleguide-card-example">
+    <div class="wui-card__label-left wui-large-text">Saved Work:XXX</div>
+      <div class="wui-card__header-right">
+        <div class="wui-topic-tag">
+          <span>Sort by: </span>
+            <select ng-model="DSC.sortData">
+              <option value="SavedDate">Date saved</option>
+              <option value="ViewedDate">Date Viewed</option>
+            </select>
+        </div>
+      </div>
+  <div class="draList wui-card" ng-repeat="item in DSC.dataList | orderBy: DSC.sortData">
+    <div class="wui-card__label-header">
+      <div class="wui-card__label">
+
+      </div>
+    </div>
+    <div class="wui-card__content">
+      <div class="wui-card__header">
+        <div class="wui-card__header-left">
+          <span class="wui-descriptor">SAVED DATE {{item.createDate}}</span>
+          <span class="wui-descriptor">VIEWED DATE {{item.lastViewed}}</span>
+        </div>
+        <div class="wui-card__header-right">
+          <button class="wui-mini-btn wui-mini-btn--secondary" ng-click="deleteItem()">Delete</button>
+          <button class="wui-mini-btn wui-mini-btn--secondary" ng-click="editItem()">Edit</button>
+        </div>
+      </div>
+      <div class="wui-card__body">
+        <div class="wui-card__body-content">
+            <p class="wui-large-text wui-content-title wui-content-title--small" ng-if="item.attributes.name">
+            {{item.attributes.name}}
+            </p>
+            <p class="itemdescription" ng-if="item.attributes.description">
+            {{item.attributes.description}}
+          </p>
+        </div>
+      </div>
+      <div class="wui-card__footer">
+
+      </div>
+    </div>
+  </div>
